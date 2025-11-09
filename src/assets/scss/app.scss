@@ -19,3 +19,63 @@ body .bi::before, [class^=bi-]::before, [class*=" bi-"]::before {
 
 // Mazer CSS
 @import "./mazer";
+
+
+.summary-cards .summary-card {
+  border-radius: 16px;
+  padding: 18px 0;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 110px; /* Much smaller and modern */
+}
+
+.summary-cards .summary-card p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.summary-cards .summary-card h2 {
+  margin-top: 6px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Mobile improvements */
+@media(max-width: 576px) {
+  .summary-cards .summary-card {
+    min-height: 90px;
+    padding: 14px 0;
+  }
+  .summary-cards .summary-card h2 {
+    font-size: 22px;
+  }
+  .summary-cards .summary-card p {
+    font-size: 12px;
+  }
+}
+
+
+/* Reduce extra space after page title */
+.page-heading {
+  margin-bottom: 1rem !important; /* default was ~2.5rem */
+}
+
+/* Make summary group closer together */
+.summary-cards {
+  margin-top: 0.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Add more breathing room before table */
+.page-content .card {
+  margin-top: 1.5rem !important;
+}
+
+table{
+    white-space: nowrap;
+
+}

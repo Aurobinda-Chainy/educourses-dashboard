@@ -1,0 +1,19 @@
+{
+  "summary": {
+    "totalCourses": 12,
+    "totalStudents": 480,
+    "totalInstructors": 18,
+    "activeBatches": 5
+  },
+
+  "courses": [
+    { "name": "Full Stack Development", "level": "Advanced", "enrolled": 120 },
+    { "name": "UI/UX Design", "level": "Intermediate", "enrolled": 90 },
+    { "name": "Java + Data Structures", "level": "Advanced", "enrolled": 150 },
+    { "name": "Python for Beginners", "level": "Beginner", "enrolled": 75 },
+    { "name": "Machine Learning Fundamentals", "level": "Advanced", "enrolled": 65 },
+    { "name": "Cloud Basics (AWS/GCP)", "level": "Intermediate", "enrolled": 88 },
+    { "name": "Cyber Security Essentials", "level": "Intermediate", "enrolled": 110 },
+    { "name": "React Frontend Development", "level": "Advanced", "enrolled": 135 }
+  ]
+}

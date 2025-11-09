@@ -1,0 +1,43 @@
+{% set title = 'Instructors' %}
+{% set filename = 'instructors.html' %}
+
+{% extends 'src/layouts/master.html' %}
+
+{% block content %}
+<div class="page-heading">
+    <h3>Instructors</h3>
+</div>
+
+<div class="page-content">
+    <div class="card">
+        <div class="card-header">
+            <h4>Instructor Directory</h4>
+        </div>
+        <div class="card-body">
+            <ul class="list-group">
+
+                <li class="list-group-item d-flex align-items-center">
+                    <div class="avatar avatar-md me-3">
+                        <img src="assets/static/images/faces/1.jpg">
+                    </div>
+                    <div>
+                        <h6 class="mb-0">Mr. Sharma</h6>
+                        <small>Java Instructor</small>
+                    </div>
+                </li>
+
+                <li class="list-group-item d-flex align-items-center">
+                    <div class="avatar avatar-md me-3">
+                        <img src="assets/static/images/faces/5.jpg">
+                    </div>
+                    <div>
+                        <h6 class="mb-0">Ms. Priya</h6>
+                        <small>Web Development</small>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

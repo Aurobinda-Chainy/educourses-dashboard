@@ -12,18 +12,15 @@ const __dirname = path.dirname(__filename);
 
 const root = resolve(__dirname, 'src')
 
-const getFiles = () => {
-    let files = {}
-
-    fs.readdirSync(root)
-        .filter(filename => filename.endsWith('.html'))
-        .forEach(filename => {
-            files[filename.slice(0, -5)] = resolve(root, filename)
-        })
-    return files
+const files = {
+  index: resolve(root, "index.html"),
+  courses: resolve(root, "courses.html"),
+  students: resolve(root, "students.html"),
+  instructors: resolve(root, "instructors.html")
 }
 
-const files = getFiles()
+
+// const files = getFiles()
 
 const getVariables = (mode) => {
     const variables = {}

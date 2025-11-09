@@ -1,0 +1,65 @@
+<div class="page-heading">
+  <h3>EduCourses Dashboard</h3>
+</div>
+
+<div class="page-content">
+  <section class="row">
+
+    <!-- Summary Cards -->
+    <div class="row g-3 summary-cards">
+  <div class="col-6 col-md-3">
+    <div class="summary-card bg-primary">
+      <p>Total Courses</p>
+      <h2 id="totalCourses">0</h2>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-3">
+    <div class="summary-card bg-success">
+      <p>Total Students</p>
+      <h2 id="totalStudents">0</h2>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-3">
+    <div class="summary-card bg-info">
+      <p>Total Instructors</p>
+      <h2 id="totalInstructors">0</h2>
+    </div>
+  </div>
+
+  <div class="col-6 col-md-3">
+    <div class="summary-card bg-warning">
+      <p>Active Batches</p>
+      <h2 id="activeBatches">0</h2>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Table -->
+    <div class="col-12 mt-4">
+      <div class="card">
+        <div class="card-header">
+          <h4>Course Enrollments</h4>
+        </div>
+        <div class="card-body">
+          <div class="table-responsive">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Course Name</th>
+                <th>Level</th>
+                <th>Enrolled</th>
+              </tr>
+            </thead>
+            <tbody id="courseTable"></tbody>
+          </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</div>
