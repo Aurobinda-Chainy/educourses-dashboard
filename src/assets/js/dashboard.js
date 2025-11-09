@@ -1,5 +1,8 @@
-fetch('assets/data/data.json')
-  .then(res => res.json())
+fetch('/assets/data/data.json')
+  .then(async res =>{
+    if(!res.ok) throw new Error(`HTTP ${res.status}`);
+    return res.json();
+  })
   .then(data => {
     
     // Summary Data
