@@ -105,14 +105,14 @@ build({
 
 export default defineConfig((env) => ({
     publicDir: 'static',
-    base: './',
+    
     root,
     plugins: [
         viteStaticCopy({
             targets: [
                 { src: normalizePath(resolve(__dirname, './src/assets/static')), dest: 'assets' },
                 
-                { src: normalizePath(resolve(__dirname, './src/assets/data')), dest: 'assets/data' },
+                
                 { src: normalizePath(resolve(__dirname, './dist/assets/compiled/fonts')), dest: 'assets/compiled/css' },
                 { src: normalizePath(resolve(__dirname, "./node_modules/bootstrap-icons/bootstrap-icons.svg")), dest: 'assets/static/images' },
                 ...copyModules
